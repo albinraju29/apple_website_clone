@@ -1,0 +1,162 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background-color: #f5f5f7;
+    color: #1d1d1f;
+}
+
+.scroll-container {
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+.scroll-container::-webkit-scrollbar {
+    display: none; /* Optional: hide scrollbar */
+}
+
+.main-heading {
+    font-size: 50px;
+    margin-left: 40px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.main-heading span {
+    color: grey;
+}
+
+.mini-heading {
+    font-size: 30px;
+    margin-left: 40px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.mini-heading span {
+    color: grey;
+}
+
+.promo-banner {
+    background-color: #ffffff;
+    text-align: center;
+    font-size: 16px;
+    padding: 16px 12px;
+    color: #1d1d1f;
+    border-bottom: 3px solid #e5e5e5;
+}
+
+.promo-banner a {
+    color: #0071e3;
+    text-decoration: none;
+}
+
+.product-card {
+    width: 180px;
+    display: inline-block;
+    margin-left: 40px;
+    margin-bottom: 40px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.product-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.product-card:hover img {
+    transform: scale(1.05);
+}
+
+.product-card p {
+    margin-top: 10px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #1d1d1f;
+    text-align: center;
+}
+
+.product-card-large-overlay {
+    position: relative;
+    display: inline-block;
+    margin-left: 40px;
+    width: 400px;
+    height: 600px;
+    overflow: hidden;
+    border-radius: 16px; /* Rounded corners */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card-large-overlay img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures image fills the area without distortion */
+    border-radius: 16px; /* Match card's rounded corners */
+    transition: transform 0.3s ease;
+}
+
+.product-card-large-overlay .overlay-text {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 12px 16px;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 8px;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+/* Hover effect */
+.product-card-large-overlay:hover {
+    transform: scale(1.03);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+}
+
+.product-card-large-overlay:hover img {
+    transform: scale(1.05);
+}
+
+.nav ol {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 0;
+    gap: 50px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    margin: 0;
+}
+
+.nav li {
+    color: #1d1d1f;
+    cursor: pointer;
+    transition: opacity 0.2s;
+    display: flex; /* Ensures image and text align horizontally */
+    align-items: center;
+    gap: 8px; /* Space between image and text */
+}
+
+.nav li:hover {
+    opacity: 0.7;
+}
+
+.nav li img {
+    height: 24px;
+    width: auto;
+    display: block;
+}
